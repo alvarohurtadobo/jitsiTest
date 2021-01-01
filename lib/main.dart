@@ -209,8 +209,7 @@ class _MyAppState extends State<MyApp> {
         ..userEmail = emailText.text
         ..audioOnly = isAudioOnly
         ..audioMuted = isAudioMuted
-        ..videoMuted = isVideoMuted
-        ..featureFlags.addAll(featureFlags);
+        ..videoMuted = isVideoMuted..featureFlags.addAll(featureFlags);
 
       debugPrint("JitsiMeetingOptions: $options");
       await JitsiMeet.joinMeeting(
